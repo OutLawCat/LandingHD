@@ -1,0 +1,138 @@
+body {
+    background-color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+    color: hsl(0, 5%, 70%)
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../Code/Images/intro.jpg")
+    center
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    color: rgb(20, 20, 20);
+}
+
+.title:after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 1.5px;
+    background-color: rgb(252, 214, 111);
+    margin: 25px auto 25px;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 888px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__2 {
+    margin-bottom: 10px;
+    font-size: 42px;
+    font-weight: 450;
+    color: rgb(120, 122, 122);
+}
+ 
+.header {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-right: 30px;
+}
+
+.nav__link {
+    display:inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: hsl(0, 0%, 61%);
+    text-decoration: none;
+    transition: color .2s linear;
+    position: relative;
+    }
+
+.nav__link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(252, 214, 111);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+} 
+
+.nav__link:hover {
+    color: rgb(252, 214, 111);
+
+}
+
+.nav__link:hover:after {
+    display: block;
+    height: 1.5px;
+}
+
+.button {
+    padding: 8px 30px;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid rgb(184, 184, 184);
+    color: hsl(0, 0%, 61%);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: rgb(252, 214, 111);
+    border: 2px solid rgb(252, 214, 111);
+}
