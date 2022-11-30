@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(assetsHD/Roboto-Regular.ttf);
+}
+
+.header-mobile {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.header-mobile > div { 
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-mobile-left-part {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.header-mobile-right-part {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.right-side-items-mobile {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 25px;
+    margin-right: 15%;
+    align-items: center;
+}
+
+.logo-header-mobile {
+    font-weight: 700;
+    font-family: 'Roboto';
+    letter-spacing: -0.17em;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 15%;
+}
+
+.block-mobile {
+    background-color: aliceblue;
+    width: 100%;
+    height: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .header-mobile{
+        display: flex;
+    }
+  }
+
+@media screen and (min-width: 401px) {
+    .header-mobile{
+        display: none;
+    }
+  }
+
+@media screen and (min-width: 401px) {
+    .block-mobile{
+        display: none;
+    }
+}
+
+  @media screen and (max-width: 285px) {
+    .right-side-items-mobile {
+        gap:15px;
+    }
+    .logo-header-mobile {
+        font-size: 17px;
+    }
+  }
